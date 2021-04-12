@@ -1,15 +1,18 @@
 'use strict';
+function randomIntFromInterval(min, max) { 
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
 let sum=0;
 const seattle ={
     min:23,
     max:65,
-    AVG:6.3,
+    avg:6.3,
     workHours:['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'],
     genN:[],
-    simulateNUmber:[],
+    simulateNumber:[],
 
 
-    genRandomnumber:function (){
+    genRandomNumber:function (){
         for(let i=0 ;i<this.workHours.length;i++ ){
             this.genN[i]=randomIntFromInterval(23,65);
 
@@ -17,16 +20,16 @@ const seattle ={
     },
     simuLate:function (){
         for(let i=0 ;i<this.workHours.length;i++ ){
-          this.simulateNUmber[i] =Math.floor(this.genN[i] *6.3);   
+          this.simulateNumber[i] =Math.floor(this.genN[i] *6.3);   
     }
 },
     totall:function(){
-        for(let i=0 ;i<this.simulateNUmber.length;i++ ){
-              sum=sum +this.simulateNUmber[i];
+        for(let i=0 ;i<this.simulateNumber.length;i++ ){
+              sum=sum +this.simulateNumber[i];
         }return (sum);
 
     } ,
-    createSEATTle:function() {
+    render:function() {
         let first = document.getElementById(mainn);
         let h2 =document.createElement('h2');
         mainn.appendChild(h2);
@@ -38,7 +41,7 @@ const seattle ={
         for(let i = 0 ; i < this.workHours.length ; i++){
             li = document.createElement('li');
             unorderList.appendChild(li);
-            li.textContent = this.workHours[i] + ": "+this.simulateNUmber[i] +" cookies";
+            li.textContent = this.workHours[i] + ": "+this.simulateNumber[i] +" cookies";
         }
         li = document.createElement('li');
             unorderList.appendChild(li);
@@ -47,10 +50,8 @@ const seattle ={
 }
 
 
-function randomIntFromInterval(min, max) { 
-    return Math.floor(Math.random() * (max - min + 1) + min);
-}
-seattle.genRandomnumber();
+
+seattle.genRandomNumber();
 // let a=[];
 // a = seattle.genN;
 // console.log(a);
@@ -60,7 +61,8 @@ seattle.simuLate();
 // let c =seattle.totall();
 // console.log(c);
 seattle.totall();
-seattle.createSEATTle();
+seattle.render();
+
 let sum1=0;
 const Tokyo ={
     min:3,
@@ -68,10 +70,10 @@ const Tokyo ={
     AVG:1.2,
     workHours:['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'],
     genN:[],
-    simulateNUmber:[],
+    simulateNumber:[],
 
 
-    genRandomnumber:function (){
+    genRandomNumber:function (){
         for(let i=0 ;i<this.workHours.length;i++ ){
             this.genN[i]=randomIntFromInterval(3,24);
 
@@ -79,16 +81,16 @@ const Tokyo ={
     },
     simuLate:function (){
         for(let i=0 ;i<this.workHours.length;i++ ){
-          this.simulateNUmber[i] =Math.floor(this.genN[i] *1.2);   
+          this.simulateNumber[i] =Math.floor(this.genN[i] *1.2);   
     }
 },
     totall:function(){
-        for(let i=0 ;i<this.simulateNUmber.length;i++ ){
-              sum1=sum1 +this.simulateNUmber[i];
+        for(let i=0 ;i<this.simulateNumber.length;i++ ){
+              sum1=sum1 +this.simulateNumber[i];
         }return (sum1);
 
     } ,
-    createSEATTle:function() {
+    render:function() {
         let first = document.getElementById(mainn);
         let h2 =document.createElement('h2');
         mainn.appendChild(h2);
@@ -100,7 +102,7 @@ const Tokyo ={
         for(let i = 0 ; i < this.workHours.length ; i++){
             li = document.createElement('li');
             unorderList.appendChild(li);
-            li.textContent = this.workHours[i] + ": "+this.simulateNUmber[i] +" cookies";
+            li.textContent = this.workHours[i] + ": "+this.simulateNumber[i] +" cookies";
         }
         li = document.createElement('li');
             unorderList.appendChild(li);
@@ -109,10 +111,8 @@ const Tokyo ={
 }
 
 
-function randomIntFromInterval(min, max) { 
-    return Math.floor(Math.random() * (max - min + 1) + min);
-}
-Tokyo.genRandomnumber();
+
+Tokyo.genRandomNumber();
 // let a=[];
 // a = Tokyo.genN;
 // console.log(a);
@@ -122,7 +122,7 @@ Tokyo.simuLate();
 // let c =Tokyo.totall();
 // console.log(c);
 Tokyo.totall();
-Tokyo.createSEATTle();
+Tokyo.render();
 
 let sum2=0;
 const Dubai ={
@@ -131,10 +131,10 @@ const Dubai ={
     AVG:3.7,
     workHours:['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'],
     genN:[],
-    simulateNUmber:[],
+    simulateNumber:[],
 
 
-    genRandomnumber:function (){
+    genRandomNumber:function (){
         for(let i=0 ;i<this.workHours.length;i++ ){
             this.genN[i]=randomIntFromInterval(11,38);
 
@@ -142,16 +142,16 @@ const Dubai ={
     },
     simuLate:function (){
         for(let i=0 ;i<this.workHours.length;i++ ){
-          this.simulateNUmber[i] =Math.floor(this.genN[i] *3.7);   
+          this.simulateNumber[i] =Math.floor(this.genN[i] *3.7);   
     }
 },
     totall:function(){
-        for(let i=0 ;i<this.simulateNUmber.length;i++ ){
-              sum2=sum2 +this.simulateNUmber[i];
+        for(let i=0 ;i<this.simulateNumber.length;i++ ){
+              sum2=sum2 +this.simulateNumber[i];
         }return (sum2);
 
     } ,
-    createSEATTle:function() {
+    render:function() {
         let first = document.getElementById(mainn);
         let h2 =document.createElement('h2');
         mainn.appendChild(h2);
@@ -163,7 +163,7 @@ const Dubai ={
         for(let i = 0 ; i < this.workHours.length ; i++){
             li = document.createElement('li');
             unorderList.appendChild(li);
-            li.textContent = this.workHours[i] + ": "+this.simulateNUmber[i] +" cookies";
+            li.textContent = this.workHours[i] + ": "+this.simulateNumber[i] +" cookies";
         }
         li = document.createElement('li');
             unorderList.appendChild(li);
@@ -172,10 +172,8 @@ const Dubai ={
 }
 
 
-function randomIntFromInterval(min, max) { 
-    return Math.floor(Math.random() * (max - min + 1) + min);
-}
-Dubai.genRandomnumber();
+
+Dubai.genRandomNumber();
 // let a=[];
 // a = seattle.genN;
 // console.log(a);
@@ -185,7 +183,8 @@ Dubai.simuLate();
 // let c =seattle.totall();
 // console.log(c);
 Dubai.totall();
-Dubai.createSEATTle();
+Dubai.render();
+
 
 let sum3=0;
 const Paris ={
@@ -194,10 +193,10 @@ const Paris ={
     AVG:2.3,
     workHours:['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'],
     genN:[],
-    simulateNUmber:[],
+    simulateNumber:[],
 
 
-    genRandomnumber:function (){
+    genRandomNumber:function (){
         for(let i=0 ;i<this.workHours.length;i++ ){
             this.genN[i]=randomIntFromInterval(11,38);
 
@@ -205,16 +204,16 @@ const Paris ={
     },
     simuLate:function (){
         for(let i=0 ;i<this.workHours.length;i++ ){
-          this.simulateNUmber[i] =Math.floor(this.genN[i] *3.7);   
+          this.simulateNumber[i] =Math.floor(this.genN[i] *3.7);   
     }
 },
     totall:function(){
-        for(let i=0 ;i<this.simulateNUmber.length;i++ ){
-              sum3=sum3 +this.simulateNUmber[i];
+        for(let i=0 ;i<this.simulateNumber.length;i++ ){
+              sum3=sum3 +this.simulateNumber[i];
         }return (sum3);
 
     } ,
-    createSEATTle:function() {
+    render:function() {
         let first = document.getElementById(mainn);
         let h2 =document.createElement('h2');
         mainn.appendChild(h2);
@@ -226,7 +225,7 @@ const Paris ={
         for(let i = 0 ; i < this.workHours.length ; i++){
             li = document.createElement('li');
             unorderList.appendChild(li);
-            li.textContent = this.workHours[i] + ": "+this.simulateNUmber[i] +" cookies";
+            li.textContent = this.workHours[i] + ": "+this.simulateNumber[i] +" cookies";
         }
         li = document.createElement('li');
             unorderList.appendChild(li);
@@ -235,10 +234,7 @@ const Paris ={
 }
 
 
-function randomIntFromInterval(min, max) { 
-    return Math.floor(Math.random() * (max - min + 1) + min);
-}
-Paris.genRandomnumber();
+Paris.genRandomNumber();
 // let a=[];
 // a = seattle.genN;
 // console.log(a);
@@ -248,7 +244,7 @@ Paris.simuLate();
 // let c =seattle.totall();
 // console.log(c);
 Paris.totall();
-Paris.createSEATTle();
+Paris.render();
 let sum4=0;
 const Lima ={
     min:2,
@@ -256,10 +252,10 @@ const Lima ={
     AVG:4.6,
     workHours:['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'],
     genN:[],
-    simulateNUmber:[],
+    simulateNumber:[],
 
 
-    genRandomnumber:function (){
+    genRandomNumber:function (){
         for(let i=0 ;i<this.workHours.length;i++ ){
             this.genN[i]=randomIntFromInterval(11,38);
 
@@ -267,16 +263,16 @@ const Lima ={
     },
     simuLate:function (){
         for(let i=0 ;i<this.workHours.length;i++ ){
-          this.simulateNUmber[i] =Math.floor(this.genN[i] *3.7);   
+          this.simulateNumber[i] =Math.floor(this.genN[i] *3.7);   
     }
 },
     totall:function(){
-        for(let i=0 ;i<this.simulateNUmber.length;i++ ){
-              sum4=sum4 +this.simulateNUmber[i];
+        for(let i=0 ;i<this.simulateNumber.length;i++ ){
+              sum4=sum4 +this.simulateNumber[i];
         }return (sum4);
 
     } ,
-    createSEATTle:function() {
+    render:function() {
         let first = document.getElementById(mainn);
         let h2 =document.createElement('h2');
         mainn.appendChild(h2);
@@ -288,7 +284,7 @@ const Lima ={
         for(let i = 0 ; i < this.workHours.length ; i++){
             li = document.createElement('li');
             unorderList.appendChild(li);
-            li.textContent = this.workHours[i] + ": "+this.simulateNUmber[i] +" cookies";
+            li.textContent = this.workHours[i] + ": "+this.simulateNumber[i] +" cookies";
         }
         li = document.createElement('li');
             unorderList.appendChild(li);
@@ -297,10 +293,7 @@ const Lima ={
 }
 
 
-function randomIntFromInterval(min, max) { 
-    return Math.floor(Math.random() * (max - min + 1) + min);
-}
-Lima.genRandomnumber();
+Lima.genRandomNumber();
 // let a=[];
 // a = seattle.genN;
 // console.log(a);
@@ -310,7 +303,7 @@ Lima.simuLate();
 // let c =seattle.totall();
 // console.log(c);
 Lima.totall();
-Lima.createSEATTle();
+Lima.render();
 
 
 
