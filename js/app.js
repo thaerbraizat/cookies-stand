@@ -2,6 +2,7 @@
 function randomIntFromInterval(min, max) { 
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
+
 let sum=0;
 const seattle ={
     min:23,
@@ -304,7 +305,6 @@ Lima.simuLate();
 // console.log(c);
 Lima.totall();
 Lima.render();
-
 
 
 
