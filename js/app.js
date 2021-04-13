@@ -10,7 +10,6 @@ function Seals(name1, min, max, avg, workHours) {
     this.min = min;
     this.max = max;
     this.avg = avg;
-    this.workHours = workHours;
     this.sumNumber = 0;
     this.genN = [];
     this.simulateNumber = [];
@@ -29,13 +28,13 @@ let coun5 = new Seals("Lima", 2, 16, 4.6, ['6am', '7am', '8am', '9am', '10am', '
 
 
 Seals.prototype.genRandomNumber = function () {
-    for (let i = 0; i < this.workHours.length; i++) {
+    for (let i = 0; i < workingHour.length; i++) {
         this.genN[i] = randomIntFromInterval(this.min, this.max);
 
     }
 };
 Seals.prototype.simuLate = function () {
-    for (let i = 0; i < this.workHours.length; i++) {
+    for (let i = 0; i < workingHour.length; i++) {
         this.simulateNumber[i] = Math.floor(this.genN[i] * this.avg);
     }
 }
