@@ -28,6 +28,8 @@
     
     h1{
       text-align: center;
+      font-size:x-large;
+      font-weight: bold;
     }
     .image{
         height: 50px;
@@ -40,5 +42,12 @@
     }
     table tr th{
       padding: 5px;
+    }
+    fieldset{
+      border:2px solid orangered;
+    }
+    .submitt{
+background-color: orangered;
+
     }
   

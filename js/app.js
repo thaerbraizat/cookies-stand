@@ -5,7 +5,7 @@ function randomIntFromInterval(min, max) {
 let arrObject = [];
 let workingHour = ['6am ', '7am ', '8am ', '9am ', '10am ', '11am ', '12pm ', '1pm ', '2pm ', '3pm ', '4pm ', '5pm ', '6pm ', '7pm '];
 
-function Seals(name1, min, max, avg, workHours) {
+function Seals(name1, min, max, avg, ) {
     this.name1 = name1;
     this.min = min;
     this.max = max;
@@ -105,6 +105,7 @@ function tableFooter() {
         totall+= arrObject[i].sumNumber;
     }
     tableData = document.createElement('td');
+    tableRow.setAttribute('id', 'last');
     tableRow.appendChild(tableData);
     tableData.textContent = totall;
     
@@ -118,6 +119,41 @@ for (let i = 0; i < arrObject.length; i++) {
     arrObject[i].render();
 };
 tableFooter();
+
+const form =document.getElementById('selasform');
+let table = document.getElementById('dom');
+let tableRow = document.createElement('tr');
+    table.appendChild(tableRow);
+    form.addEventListener('submit',handleTable);
+    function handleTable(event) {
+        event.preventDefault();
+        let name1 = event.target.nameStore.value;
+        // console.log(name1);
+        let min = parseInt(event.target.minNumber.value);
+        console.log(min);
+        let max= parseInt(event.target.maxNumber.value);
+        console.log(max);
+        let cookies= parseFloat(event.target.avgNumber.value);
+          console.log(cookies);
+          let newSales = new Seals(name1,min,max,cookies);
+
+
+
+     
+       newSales.genRandomNumber();
+       newSales.simuLate();
+       newSales.totall();
+       newSales.render();
+       deleteRow();
+       tableFooter();
+    }
+
+    function deleteRow() {   
+    var row = document.getElementById("last");
+    row.parentNode.removeChild(row);
+}
+    
+
 
 // const seattle ={
 //     name1:"seatle",
