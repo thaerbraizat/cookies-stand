@@ -33,3 +33,20 @@
 .secend{
     background-color: plum;
 }
+.make{
+  
+    width:  100%;
+    height:100%;
+    object-fit: cover;
+} 
+h3{
+  color:red;
+  background-color: black;
+  font-size: 30px;
+}
+p{
+  text-align: justify;
+}
+.loc li a{
+color: red;
+}
