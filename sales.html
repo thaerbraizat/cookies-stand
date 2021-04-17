@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
 
     <title>sales</title>
@@ -13,9 +13,9 @@
             
           <ul class="qw">
           <li class="hi"><img class="image" src="http://saulfein.github.io/cookie-stand/img/salmon.png"></li>
-          <li class="hi"><a  href="index.html">home</a> </li>
+          <li class="hi"><a  href="index.html">Home</a> </li>
           <li class="hi"><a href="#sales.html">Sales </a> </li>
-          <li class="hi"><a href="#about us">about us </a> </li>
+          <li class="hi"><a href="#about us">About us </a> </li>
           </ul>   
           
         </nav> 
@@ -27,25 +27,27 @@
 
 <form id="selasform" >
 <fieldset>
-    <legend>Salesform</legend>
-   <label for="nameStore">name1</label>
-   <input type="text" id="nameStore">
+    <legend >Salesform</legend>
+   <label class="labb" for="nameStore">Name</label>
+   <input type="text" id="nameStore" placeholder="cityname" name="name1" required>
    <br>
-    <label for="minNumber">min: </label>
-    <input type="number" id="minNumber">
+    <label for="minNumber">Min</label>
+    <input type="number" id="minNumber" placeholder="minimum cookies" required>
     <br>
-    <label for="maxNumber">max :</label>
-    <input type="number" id="maxNumber">
+    <label for="maxNumber">Max </label>
+    <input type="number" id="maxNumber" placeholder="maximum cookies" required>
     <br>
-    <label for="avgNumber"> cookies  :</label>
-    <input type="text" id="avgNumber">
+    <label for="avgNumber"> Avg </label>
+    <input type="text" id="avgNumber" placeholder="average cookies" required>
     <br>
-   <input class="submitt" type="submit" value="Submit">
+   <input class="submitt" type="submit" value="Submit" >
 </fieldset>
 </form>
  </main>
  <footer>
-
+    <p>
+        &copy; copyright2021  
+   </p>
  </footer>   
  <script src="js/app.js"></script>
 </body>
