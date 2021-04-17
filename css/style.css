@@ -1,4 +1,8 @@
 
+    body{
+      background-color: #f0e3ca;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+    }
     .qw{
       list-style-type: none;
       margin: 0;
@@ -30,24 +34,82 @@
       text-align: center;
       font-size:x-large;
       font-weight: bold;
+      color: #ff8303;
     }
     .image{
-        height: 50px;
+        height: 30px;
         width: 100px;
     }
     table {
-      border:2px solid orangered;
+      /* border:2px solid orangered; */
+     border:ridge 5px #ff8303;
+      background-color:#0e0101;
+       color:#FFF; 
+       border-collapse: collapse;
+       font-family: Arial, Helvetica, sans-serif;
+       
       
     
     }
     table tr th{
-      padding: 5px;
-    }
-    fieldset{
-      border:2px solid orangered;
-    }
-    .submitt{
-background-color: orangered;
+      padding: 10px;
+   
+      border: solid;
+      border-width: 1px 0;
 
     }
-  
+    table tr{
+      border: solid;
+      border-width: 1px 0;
+
+    }
+    fieldset{
+      border:2px solid #ff8303;
+      padding: 10px;
+      background-color:#0e0101;
+      color: whitesmoke;
+      text-align: center;
+      width: 50%;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+
+      
+    }
+    .submitt{
+          background-color: #ff8303;
+          padding: 20px;
+     
+        
+     
+
+    }
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
+      padding: 10PX;
+    }
+    /* .selasform{
+    } */
+legend{
+color: #ff8303;
+font-weight: bolder;
+display: block;
+  padding-left: 2px;
+  padding-right: 2px;
+  border: none;
+  background-color: #f0e3ca;
+
+}
+footer{
+  background-color: #a35709;
+  margin: 10px;
+  text-align: center;
+}
+input[type=text],input[type=number]{
+  width: 100%;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical ;
+ 
+}

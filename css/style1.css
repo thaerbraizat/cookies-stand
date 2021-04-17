@@ -1,9 +1,15 @@
+body{
+  background-color: #f0e3ca;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .qw{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
+
   }
   
   .hi {
@@ -23,30 +29,80 @@
     background-color: #111;
   }
 .image{
-    height: 50px;
+    height: 30px;
     width: 100px;
 }
 .disImge{
-    width: 25%;
+    
+   display: inline-block;
+   background-color: #333;
+ 
+
+
 
 }
-.secend{
-    background-color: plum;
-}
+
 .make{
   
-    width:  100%;
-    height:100%;
-    object-fit: cover;
+ 
+    border-radius: 50%; 
+    
+    float: left;
+    width: 25%;
+    height: 130px;
+   padding:  10px;
+   
 } 
 h3{
-  color:red;
-  background-color: black;
-  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:#ff8303;
+  font-weight: bolder;
+  background-color:black ;
+  width: 17%;
+  font-size:20px;
+ 
+
 }
 p{
   text-align: justify;
 }
-.loc li a{
-color: red;
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
+  padding: 10PX;
+}
+footer{
+  background-color: #a35709;
+  margin: 10px;
+ text-align: center;
+}
+h2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:#ff8303;
+  font-weight: bolder;
+  background-color:black ;
+  width: 17%;
+  font-size:20px;
+
+}
+.table{
+  border: 6px solid #333;
+  background-color: #ff8303;
+  width: 100%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif
+}
+th{
+  border: 2px solid #333;
+  padding: 4px 4px;
+}
+#tablecont{
+  background-color:#f0e3ca ;
+}
+h4{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:#ff8303;
+  font-weight: bolder;
+  background-color:black ;
+  width: 25%;
+  font-size:20px;
 }
